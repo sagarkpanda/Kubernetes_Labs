@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: mywebapp
+ annotations:
+  kubernetes.io/change-cause: "initial deployment"
+spec:
+ replicas: 3
+ selector:
+  matchLabels:
+   app: data
+ template:
+  metadata:
+   labels:
+    app: data
+  spec:
+   containers:
+   - name: prodapp
+     image: quay.io/gauravkumar9130/production:v1

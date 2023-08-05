@@ -1,0 +1,1 @@
+kctl expose deployment mywebapp --target-port=80 --port=80 --type=LoadBalancer

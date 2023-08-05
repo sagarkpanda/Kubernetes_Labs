@@ -1,0 +1,11 @@
+# changes to prod.yml
+
+metadata:
+ name: mywebapp
+ annotations:
+  kubernetes.io/change-cause: "updated to v2"
+
+# -----------------------------------------------
+containers:
+   - name: prodapp
+     image: quay.io/gauravkumar9130/production:v2

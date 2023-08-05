@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: myapp
+spec:
+ selector:
+  matchLabels:
+   app: old
+ replicas: 3
+ template:
+  metadata:
+   labels:
+    app: old
+  spec:
+   containers:
+   - name: prod-app
+     image: quay.io/gauravkumar9130/production:v1
