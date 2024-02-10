@@ -1,0 +1,3 @@
+[submodule "ArgoMagic"]
+	path = ArgoMagic
+	url = https://github.com/SagarCodeCtrl/ArgoMagic.git
