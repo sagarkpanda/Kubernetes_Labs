@@ -4,7 +4,7 @@
 <img alt="K8s" width="270px" src="https://raw.githubusercontent.com/sagarkrp/sagarkrp/main/images/k8s.svg" style="padding-right:10px;" />
 </p>
 </br>
-<h3> <strong> Read the detailed article on: </strong> </h3> <a href = "https://sagarkrp.medium.com/list/kubernetes-a0f8fab4ee0d" target ="_blank">
+<h3> <strong> Read the detailed article on: </strong> </h3> <a href = "https://sagarcodectrl.medium.com/list/kubernetes-a0f8fab4ee0d" target ="_blank">
 
 <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/sagarkrp/sagarkrp/blob/main/images/Medium-white1x.png" width="160px" height="35px">
