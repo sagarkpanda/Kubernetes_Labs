@@ -1,7 +1,0 @@
-{
-  "tenantId": "<-->",
-  "subscriptionId": "<>",
-  "resourceGroup": "dns-zones",
-  "useManagedIdentityExtension": true,
-  "userAssignedIdentityID": "<>"
-}
