@@ -1,3 +1,6 @@
 [submodule "ArgoMagic"]
 	path = ArgoMagic
 	url = https://github.com/SagarCodeCtrl/ArgoMagic.git
+[submodule "ext_dns"]
+	path = ext_dns
+	url = https://github.com/SagarCodeCtrl/ext_dns.git
