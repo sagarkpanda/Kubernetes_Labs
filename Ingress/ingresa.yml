@@ -1,0 +1,32 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+ name: myapp-ingress
+ annotations:
+  kubernetes.io/ingress.class: nginx
+spec:
+ ingressClassName: nginx 
+ rules:
+ - http:
+    paths:
+    - path: /
+      pathType: Prefix
+      backend:
+       service:
+         name: hotel
+         port:
+          number: 80
+    - path: /tea
+      pathType: Prefix
+      backend:
+       service:
+         name: tea
+         port:
+          number: 80
+    - path: /coffee
+      pathType: Prefix
+      backend:
+       service:
+         name: coffee
+         port:
+          number: 80
