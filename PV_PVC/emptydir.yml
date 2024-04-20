@@ -1,0 +1,13 @@
+kind: Pod
+metadata:
+ name: xyz
+spec:
+ containers:
+ - name: web
+   image: nginx
+   volumeMounts:
+   - name: cache
+     mountPath: /mytempdata/
+ volumes:
+ - name: cache
+   emptyDir: {}
