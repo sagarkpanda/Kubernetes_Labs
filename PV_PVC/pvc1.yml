@@ -4,6 +4,8 @@ metadata:
  name: pvc1
 spec:
  storageClassName: mylocal #this needs to change
+ #storageClassName: localstorage #uncomment this 
+ #and comment the above adte experiment 
  accessModes:
  - ReadWriteMany
  resources:
