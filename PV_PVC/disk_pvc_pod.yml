@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: abc
+spec:
+ volumes:
+ - name: myvol
+   persistentVolumeClaim:
+    claimName: azure-managed-disk-pvc
+ containers:
+ - name: abc
+   image: quay.io/gauravkumar9130/nginx
+   volumeMounts:
+   - name: myvol
+     mountPath: /websites
