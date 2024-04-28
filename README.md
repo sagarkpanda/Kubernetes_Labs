@@ -1,7 +1,8 @@
 # Container Orchestration with Kubernetes
 
+<!-- https://raw.githubusercontent.com/sagarkrp/sagarkrp/main/images/k8s.svg -->
 <p align="center">
-<img alt="K8s" width="270px" src="https://raw.githubusercontent.com/sagarkrp/sagarkrp/main/images/k8s.svg" style="padding-right:10px;" />
+<img alt="K8s" width="200px" src="https://github.com/sagarkpanda/sagarkpanda/blob/main/images/k8s.png" style="padding-right:10px;" />
 </p>
 </br>
 <h3> <strong> Read the detailed article on: </strong> </h3> <a href = "https://sagarcodectrl.medium.com/list/kubernetes-a0f8fab4ee0d" target ="_blank">
