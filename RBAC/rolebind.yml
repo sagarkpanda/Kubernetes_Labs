@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: demorole-binding
+  namespace: default
+subjects:
+- kind: User # set to Groups for role assigning toa group
+  name: "user2@sagarpanda.com"  # Replace with your Azure AD user email
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: readrole
+  apiGroup: rbac.authorization.k8s.io
