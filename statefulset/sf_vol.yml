@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+ name: myweb-statefulset
+spec:
+ serviceName: myweb-hsvc
+ replicas: 5
+ selector:
+  matchLabels:
+   app: web
+ template:
+  metadata:
+   labels:
+    app: web
+  spec:
+   containers:
+   - name: web
+     image: quay.io/gauravkumar9130/nginxdemo
+     volumeMounts:
+     - mountPath: /mydata
+       name: data-volume
+ volumeClaimTemplates:
+ - metadata:
+    name: data-volume
+   spec:
+    storageClassName: managed
+    accessModes:
+     - ReadWriteOnce
+    resources:
+     requests:
+       storage: 500Mi

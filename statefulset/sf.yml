@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+ name: web
+spec:
+ template:
+  metadata:
+   labels:
+    app: web
+  spec:
+   containers:
+   - name: web
+     image: quay.io/gauravkumar9130/nginxdemo
+ replicas: 3
+ selector:
+  matchLabels:
+   app: web
+ serviceName: sfsvc
