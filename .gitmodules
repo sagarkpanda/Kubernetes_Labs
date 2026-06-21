@@ -4,3 +4,9 @@
 [submodule "ext_dns"]
 	path = ext_dns
 	url = https://github.com/SagarCodeCtrl/ext_dns.git
+[submodule "otel-labs"]
+	path = otel-labs
+	url = https://github.com/sagarkpanda/otel-labs.git
+[submodule "otel-labs-platform"]
+	path = otel-labs-platform
+	url = https://github.com/sagarkpanda/otel-labs-platform.git
